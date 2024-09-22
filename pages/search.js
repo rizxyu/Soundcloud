@@ -14,7 +14,7 @@ export default function SearchPage() {
     if (title) {
       const fetchSearchResults = async () => {
         try {
-          const response = await axios.get(`https://api-id.wzblueline.xyz/api/search/soundcloud?title=${encodeURIComponent(title)}`);
+          const response = await axios.get(`https://blueline-sandy.vercel.app/api/search/soundcloud?title=${encodeURIComponent(title)}`);
           setResults(response.data.result);
         } catch (err) {
           setError('Error fetching search results');
