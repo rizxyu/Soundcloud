@@ -35,4 +35,4 @@ export default function SearchPage() {
       {results.length > 0 && <SearchResults results={results} />}
     </div>
   );
-    
+      }
